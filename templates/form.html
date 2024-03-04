@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    {% load static %}
+<center>    <img src="{% static 'images/sign.png' %}" alt=""></center>
+  <center>  <button class="btn btn-outline-danger">Sign in</button></center>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+</head>
+<body background="{% static 'images/opo.avif' %}">
+
+<a  class="btn btn-outline-danger" href="{% url 'about' %}">About us</a>
+<a  class="btn btn-outline-danger" href="{% url 'homepage' %}"> Homepage</a>
+<div>
+    <form action="" class="bg-warning m-5 p-5">
+    <legend class="text-center"><u><b>About page</b></u></legend>
+    
+    
+    <div class="form-floating mt-3 mb-3">
+        <input type="text" id="fname" placeholder="Firstname"class="form-control" required="required">
+        <label for="fname"id="fname">Firstname</label>
+        <br>
+    </div>
+    
+      <div class="form-floating mt-3 mb-3">
+        <input type="text" id="lname" placeholder="Lastname"class="form-control" required="required">
+        <label for="lname"id="lname">Lastname</label>
+        <br>
+    </div>
+    
+      <div class="form-floating mt-3 mb-3">
+        <input type="email" id="email" placeholder="Name@gmail.com"class="form-control" required="required">
+        <label for="email"id="email">Email_address</label>
+        <br>
+    </div>
+      <div class="form-floating mt-3 mb-3">
+        <input type="password" id="pwd" placeholder="Password"class="form-control" required="required">
+        <label for="pwd"id="pwd">Password</label>
+        <br>
+    </div>
+    
+    <div class="d-grid">
+        <button class="btn btn-outline-dark">Sign-up</button>
+    </div>
+    <div class="d-grid mt-3 mb-3">
+     
+    </div>
+</form>
+
+</div>
+</body>
+</html>
